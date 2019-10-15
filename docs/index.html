@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8>
+  <title>Adam Richardson</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+  <div id="content">
+    <h1>Adam Richardson</h1>
+    <div class="section">
+      <p>I'm a Canadian software developer studying computer science at the University of Waterloo (graduating in late 2020). I'm seeking an internship for the summer of 2020, and full-time opportunities for 2021 and beyond. I can be reached via <a href="https://www.linkedin.com/in/as3richa/">LinkedIn</a>, or at the email address listed on <a href="resume.pdf">my resume</a>.</p>
+      <p>(Jump to: <a href="#work-experience">work experience</a>, <a href="#personal-projects">personal projects</a>, <a href="#open-source"></a>)</p>
+    </div>
+    <h2><a id="work-experience"></a>Work Experience</h2>
+    <div class="section">
+      <div class="work">
+        <h3 class="company"><a href="https://www.coinbase.com/">Coinbase</a></h3>
+        <p class="role">Software Engineering Intern, <a href="https://commerce.coinbase.com/">Coinbase Commerce</a> (Sept. 2017 - Dec. 2017)</p>
+        <p class="role">Software Engineer, <a href="https://commerce.coinbase.com/">Coinbase Commerce</a> (Jan. 2018 - Aug. 2018)</p>
+        <p class="role">Software Engineer, Application Security (Sept. 2018 - Apr. 2019)</p>
+        <ul class="bullets">
+          <li class="bullet">Built a SaaS cryptocurrency ecommerce platform, featuring embeddable and hosted checkout flows as well as a full-featured merchant dashboard, which went on to process more than $10M USD in transaction volume</li>
+          <li class="bullet">Wrote a novel publish-subscribe service on top of bitcoind, reducing average time to detection of Bitcoin transactions by a factor of 10</li>
+          <li class="bullet">Implemented new security checks and improved usability and code quality in <a href="https://github.com/coinbase/salus">Salus</a>, Coinbase's open-source vulnerability scanner</li>
+        </ul>
+      </div>
+      <div class="work">
+        <h3 class="company"><a href="https://stripe.com/">Stripe</a></h3>
+        <p class="role">Engineering Intern, Storage (Jan. 2017 - Apr. 2017)</p>
+        <ul class="bullets">
+          <li class="bullet">Lead a mission-critical shard rebalancing of Stripe's primary MongoDB database, deploying hundreds of new servers and migrating hundreds of gigabytes of live production data</li>
+          <li class="bullet">Built a custom MapReduce pipeline to compute an ideal partitioning of the shard keyspace, based on an elegant dynamic programming formulation</li>
+          <li class="bullet">Implemented and improved internal database tooling; reduced replication latency by a factor of 3 for routine manual failovers</li>
+        </ul>
+      </div>
+      <div class="work">
+        <h3 class="company"><a href="https://www.shopify.com/">Shopify</a></h3>
+        <p class="role">Software Developer Intern, Production Engineering (Jan. 2016 - Aug. 2016)</p>
+        <ul class="bullets">
+          <li class="bullet">Built and deployed a Lua caching layer for NGINX load balancers, allowing an additional 4% of all incoming requests to the main Shopify app to be served from cache</li>
+          <li class="bullet">Improved and refactored a large-scale HTTP load testing framework; implemented a feature allowing synthetic load to be generated in a globally-distributed fashion</li>
+          <li class="bullet">Implemented a clean-room build system for internal Debian packages, thereby allowing Shopfiy's custom NGINX patch to be recompiled and deployed at the click of a button</li>
+        </ul>
+      </div>
+    </div>
+    <h2><a id="personal-projects"></a>Personal Projects</h2>
+    <div class="section">
+      <div class="project">
+        <h3 class="name"><a href="https://github.com/as3richa/libcrex">libcrex</a></h3>
+        <p>Feature-complete, performant regular expression library, written in C; featuring a cross-platform interpreted VM, as well as a compiler targeting x86_64 on Linux and Darwin.</p>
+      </div>
+      <div class="project">
+        <h3 class="name"><a href="https://github.com/as3richa/raycast">raycast</a></h3>
+        <p>Raycasting 3D renderer, written in pure Javascript. Generates a maze-like world using a randomized variant of Prim's algorithm and navigates through the grid to an exit. Reminiscent of a classic Windows 95 screensaver.</p>
+        <a href="https://github.com/as3richa/raycast"><img class="screenshot" src="raycast.png"></a>
+      </div>
+      <div class="project">
+        <h3 class="name"><a href="https://github.com/as3richa/es6-connect4">es6-connect4</a></h3>
+        <p>Browser-based multiplayer Connect 4 game, written in ES6 with Flow. Supports mouse, touch, and keyboard controls.</p>
+        <a href="https://github.com/as3richa/es6-connect4"><img class="screenshot" src="c4.png"></a>
+      </div>
+      <div class="project">
+        <h3 class="name"><a href="https://github.com/as3richa/termracer">termracer</a></h3>
+        <p>Tiny console typing game loosely inspired by typeracer, written in C with ncurses. Featuring a corpus of texts from Alice in Wonderland.</p>
+        <a href="https://github.com/as3richa/termracer"><img class="screenshot" src="termracer.png"></a>
+      </div>
+      <div class="project">
+        <h3 class="name"><a href="https://github.com/as3richa/goword">goword</a></h3>
+        <p>Browser-based multiplayer Boggle clone, written in Go and pure Javascript</p>
+        <a href="https://github.com/as3richa/goword"><img class="screenshot" src="goword.png"></a>
+      </div>
+      <div class="project">
+        <h3 class="name"><a href="https://github.com/as3richa/kudos">kudos</a></h3>
+        <p>Browser-based sudoku app, written in pure Javascript. Comes preloaded with a large variety of puzzles and features automatic solving, hints, error checking, and a builder mode.</p>
+        <a href="https://github.com/as3richa/kudos"><img class="screenshot" src="kudos.png"></a>
+      </div>
+    </div>
+  </div>
+</body>
+</div>

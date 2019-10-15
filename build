@@ -1,0 +1,23 @@
+#!/usr/bin/env ruby
+
+require 'erb'
+require 'yaml'
+
+def deep_symbolize_keys(hsh)
+  case hsh
+  when Hash then hsh.map { |key, value| [key.to_sym, deep_symbolize_keys(value)] }.to_h
+  when Array then hsh.map { |elem| deep_symbolize_keys(elem) }
+  else hsh
+  end
+end
+
+def render(about, work, projects)
+  result = ERB.new(File.read('index.erb')).result(Kernel.binding)
+  result.split("\n").reject { |line| /\A\s*\z/ =~ line }.join("\n")
+end
+
+about = File.read('about.txt').split("\n").reject(&:empty?)
+work = deep_symbolize_keys(YAML.load_file('work.yml'))
+projects = deep_symbolize_keys(YAML.load_file('projects.yml'))
+
+File.write('docs/index.html', render(about, work, projects))

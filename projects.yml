@@ -1,0 +1,43 @@
+- name: libcrex
+  url: https://github.com/as3richa/libcrex
+  description: >-
+    Feature-complete, performant regular expression library, written in C;
+    featuring a cross-platform interpreted VM, as well as a compiler targeting
+    x86_64 on Linux and Darwin.
+
+- name: raycast
+  url: https://github.com/as3richa/raycast
+  screenshot: raycast.png
+  description: >-
+    Raycasting 3D renderer, written in pure Javascript. Generates a
+    maze-like world using a randomized variant of Prim's algorithm and
+    navigates through the grid to an exit. Reminiscent of a classic Windows
+    95 screensaver.
+
+- name: es6-connect4
+  url: https://github.com/as3richa/es6-connect4
+  screenshot: c4.png
+  description: >-
+    Browser-based multiplayer Connect 4 game, written in ES6 with
+    Flow. Supports mouse, touch, and keyboard controls.
+
+- name: termracer
+  url: https://github.com/as3richa/termracer
+  screenshot: termracer.png
+  description: >-
+    Tiny console typing game loosely inspired by typeracer, written in C
+    with ncurses. Featuring a corpus of texts from Alice in Wonderland.
+
+- name: goword
+  url: https://github.com/as3richa/goword
+  screenshot: goword.png
+  description: >-
+    Browser-based multiplayer Boggle clone, written in Go and pure Javascript
+
+- name: kudos
+  url: https://github.com/as3richa/kudos
+  screenshot: kudos.png
+  description: >-
+    Browser-based sudoku app, written in pure Javascript. Comes preloaded with
+    a large variety of puzzles and features automatic solving, hints, error
+    checking, and a builder mode.

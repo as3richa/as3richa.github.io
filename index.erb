@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8>
+  <title>Adam Richardson</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+  <div id="content">
+    <h1>Adam Richardson</h1>
+    <div class="section">
+    <% about.each do |paragraph| %>
+      <p><%= paragraph %></p>
+    <% end %>
+    </div>
+    <h2><a id="work-experience"></a>Work Experience</h2>
+    <div class="section">
+    <% work.each do |company:, url:, roles:, bullets:| %>
+      <div class="work">
+        <h3 class="company"><a href="<%= url %>"><%= company %></a></h3>
+      <% roles.each do |title:, span:| %>
+        <p class="role"><%= title %> (<%= span.join(' - ') %>)</p>
+      <% end %>
+        <ul class="bullets">
+        <% bullets.each do |bullet| %>
+          <li class="bullet"><%= bullet %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+    </div>
+    <h2><a id="personal-projects"></a>Personal Projects</h2>
+    <div class="section">
+    <% projects.each do |name:, url:, description:, screenshot: nil| %>
+      <div class="project">
+        <h3 class="name"><a href="<%= url %>"><%= name %></a></h3>
+        <p><%= description %></p>
+      <% if screenshot %>
+        <a href="<%= url %>"><img class="screenshot" src="<%= screenshot%>"></a>
+      <% end %>
+      </div>
+    <% end %>
+    </div>
+  </div>
+</body>
+</div>

@@ -1,0 +1,33 @@
+- company: Coinbase
+  url: https://www.coinbase.com/
+  roles:
+  - title: Software Engineering Intern, <a href="https://commerce.coinbase.com/">Coinbase Commerce</a>
+    span: [Sept. 2017, Dec. 2017]
+  - title: Software Engineer, <a href="https://commerce.coinbase.com/">Coinbase Commerce</a>
+    span: [Jan. 2018, Aug. 2018]
+  - title: Software Engineer, Application Security
+    span: [Sept. 2018, Apr. 2019]
+  bullets:
+  - Built a SaaS cryptocurrency ecommerce platform, featuring embeddable and hosted checkout flows as well as a full-featured merchant dashboard, which went on to process more than $10M USD in transaction volume
+  - Wrote a novel publish-subscribe service on top of bitcoind, reducing average time to detection of Bitcoin transactions by a factor of 10
+  - Implemented new security checks and improved usability and code quality in <a href="https://github.com/coinbase/salus">Salus</a>, Coinbase's open-source vulnerability scanner
+
+- company: Stripe
+  url: https://stripe.com/
+  roles:
+  - title: Engineering Intern, Storage
+    span: [Jan. 2017, Apr. 2017]
+  bullets:
+  - Lead a mission-critical shard rebalancing of Stripe's primary MongoDB database, deploying hundreds of new servers and migrating hundreds of gigabytes of live production data
+  - Built a custom MapReduce pipeline to compute an ideal partitioning of the shard keyspace, based on an elegant dynamic programming formulation
+  - Implemented and improved internal database tooling; reduced replication latency by a factor of 3 for routine manual failovers
+
+- company: Shopify
+  url: https://www.shopify.com/
+  roles:
+  - title: Software Developer Intern, Production Engineering
+    span: [Jan. 2016, Aug. 2016]
+  bullets:
+  - Built and deployed a Lua caching layer for NGINX load balancers, allowing an additional 4% of all incoming requests to the main Shopify app to be served from cache
+  - Improved and refactored a large-scale HTTP load testing framework; implemented a feature allowing synthetic load to be generated in a globally-distributed fashion
+  - Implemented a clean-room build system for internal Debian packages, thereby allowing Shopfiy's custom NGINX patch to be recompiled and deployed at the click of a button
