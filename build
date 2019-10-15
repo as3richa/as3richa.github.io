@@ -20,4 +20,4 @@ about = File.read('about.txt').split("\n").reject(&:empty?)
 work = deep_symbolize_keys(YAML.load_file('work.yml'))
 projects = deep_symbolize_keys(YAML.load_file('projects.yml'))
 
-File.write('docs/index.html', render(about, work, projects))
+File.write('index.html', render(about, work, projects))
