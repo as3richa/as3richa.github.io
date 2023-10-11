@@ -16,32 +16,37 @@
     <h2><a id="work-experience"></a>Work Experience</h2>
     <div class="section">
       <div class="work">
-        <h3 class="company"><a href="https://www.coinbase.com/">Coinbase</a></h3>
-        <p class="role">Software Engineering Intern, <a href="https://commerce.coinbase.com/">Coinbase Commerce</a> (Sept. 2017 - Dec. 2017)</p>
-        <p class="role">Software Engineer, <a href="https://commerce.coinbase.com/">Coinbase Commerce</a> (Jan. 2018 - Aug. 2018)</p>
-        <p class="role">Software Engineer, Application Security (Sept. 2018 - Apr. 2019)</p>
+        <h3 class="company"><a href="https://www.stripe.com/">Stripe</a></h3>
+        <p class="role">Senior Software Engineer; tech lead for Data Movement (2020 - present)</p>
         <ul class="bullets">
-          <li class="bullet">Built a SaaS cryptocurrency ecommerce platform, featuring embeddable and hosted checkout flows as well as a full-featured merchant dashboard, which went on to process more than $10M USD in transaction volume</li>
-          <li class="bullet">Wrote a novel publish-subscribe service on top of bitcoind, reducing average time to detection of Bitcoin transactions by a factor of 10</li>
-          <li class="bullet">Implemented new security checks and improved usability and code quality in <a href="https://github.com/coinbase/salus">Salus</a>, Coinbase's open-source vulnerability scanner</li>
+          <li class="bullet">As tech lead for Data Movement, set the technical direction, drove planning and prioritization, and scoped projects for a team of 7 engineers</li>
+          <li class="bullet">Designed and implemented Stripe’s next-generation streaming ingestion platform based on Apache Flink and Kubernetes, reducing end-to-end data ingestion latency from 2+ hours to less than 1 minute</li>
+          <li class="bullet">Drove fundamental efficiency improvements for Stripe’s Spark- and Airflow-based data ingestion platform, totaling $3.5m/year of AWS savings</li>
+          <li class="bullet">Implemented a custom S3 retry policy for Stripe’s Spark data pipelines, reducing the number of pipeline failures due to rate limiting by a factor of 10</li>
+          <li class="bullet">Led a cross-functional project across feature 8 engineers across 3 teams enabling support for Stripe’s next-generation API data models in across all offline workflows the data warehouse</li>
+        </ul>
+      </div>
+      <div class="work">
+        <h3 class="company"><a href="https://www.coinbase.com/">Coinbase</a></h3>
+        <p class="role">Software Engineer (<a href="https://commerce.coinbase.com/">Coinbase Commerce</a>, Application Security, 2017 - 2019)</p>
+        <ul class="bullets">
+          <li class="bullet">Built a SaaS cryptocurrency ecommerce platform from the ground up that went on to process more than $10M USD in transaction volume</li>
+          <li class="bullet">Implemented fundamental improvements in Coinbase’s open-source vulnerability scanner, Salus</li>
+          <li class="bullet">Shipped open-source patches fixing critical bugs in the Yarn and Rails</li>
         </ul>
       </div>
       <div class="work">
         <h3 class="company"><a href="https://stripe.com/">Stripe</a></h3>
-        <p class="role">Engineering Intern, Storage (Jan. 2017 - Apr. 2017)</p>
+        <p class="role">Engineering Intern, Storage (January - April 2017)</p>
         <ul class="bullets">
-          <li class="bullet">Lead a mission-critical shard rebalancing of Stripe's primary MongoDB database, deploying hundreds of new servers and migrating hundreds of gigabytes of live production data</li>
-          <li class="bullet">Built a custom MapReduce pipeline to compute an ideal partitioning of the shard keyspace, based on an elegant dynamic programming formulation</li>
-          <li class="bullet">Implemented and improved internal database tooling; reduced replication latency by a factor of 3 for routine manual failovers</li>
+          <li class="bullet">Lead a mission-critical shard rebalancing for Stripe's sharded MongoDB installation, deploying hundreds of new servers and migrating terabytes of live production data with zero downtime</li>
         </ul>
       </div>
       <div class="work">
         <h3 class="company"><a href="https://www.shopify.com/">Shopify</a></h3>
-        <p class="role">Software Developer Intern, Production Engineering (Jan. 2016 - Aug. 2016)</p>
+        <p class="role">Software Developer, Production Engineering (January 2016 - August 2016)</p>
         <ul class="bullets">
-          <li class="bullet">Built and deployed a Lua caching layer for NGINX load balancers, allowing an additional 4% of all incoming requests to the main Shopify app to be served from cache</li>
-          <li class="bullet">Improved and refactored a large-scale HTTP load testing framework; implemented a feature allowing synthetic load to be generated in a globally-distributed fashion</li>
-          <li class="bullet">Implemented a clean-room build system for internal Debian packages, thereby allowing Shopfiy's custom NGINX patch to be recompiled and deployed at the click of a button</li>
+          <li class="bullet">Built and deployed a custom caching layer for NGINX load balancers, increasing global cache hit rate by 4%</li>
         </ul>
       </div>
     </div>
@@ -50,6 +55,22 @@
       <div class="project">
         <h3 class="name"><a href="https://github.com/as3richa/libcrex">libcrex</a></h3>
         <p>Feature-complete, performant regular expression library, written in C; featuring a cross-platform interpreted VM, as well as a compiler targeting x86_64 on Linux and Darwin.</p>
+      </div>
+      <div class="project">
+        <h3 class="name"><a href="https://github.com/as3richa/queensway">queensway</a></h3>
+        <p>Toy DNS proxy server implemented in Rust.</p>
+      </div>
+      <div class="project">
+        <h3 class="name"><a href="https://github.com/as3richa/calico ">calico </a></h3>
+        <p>Ray tracer writen in Rust.</p>
+      </div>
+      <div class="project">
+        <h3 class="name"><a href="https://github.com/as3richa/petrel ">petrel</a></h3>
+        <p>Toy implementation of SHA-1 and SHA-2 family of hash functions written in Rust.</p>
+      </div>
+      <div class="project">
+        <h3 class="name"><a href="https://github.com/as3richa/chisel ">chisel </a></h3>
+        <p>Interactive demo of seam carving algorithm written in TypeScript.</p>
       </div>
       <div class="project">
         <h3 class="name"><a href="https://github.com/as3richa/raycast">raycast</a></h3>
@@ -75,6 +96,10 @@
         <h3 class="name"><a href="https://github.com/as3richa/kudos">kudos</a></h3>
         <p>Browser-based sudoku app, written in pure Javascript. Comes preloaded with a large variety of puzzles and features automatic solving, hints, error checking, and a builder mode.</p>
         <a href="https://github.com/as3richa/kudos"><img class="screenshot" src="kudos.png"></a>
+      </div>
+      <div class="project">
+        <h3 class="name"><a href="https://github.com/as3richa/dmqh">dmqh</a></h3>
+        <p>2048 clone written in TypeScript.</p>
       </div>
     </div>
   </div>
